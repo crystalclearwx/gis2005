@@ -1,0 +1,80 @@
+html, body, .container {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header, .footer  {
+  flex: none;
+  margin-left: 10px;
+}
+
+.content {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.sidebar {
+  flex: 30%;
+  margin-left: 10px;
+}
+
+.main {
+  flex: 70%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#layers, #legend {
+  height: 50%;
+}
+
+.legend-symbol, .legend-label {
+  display: inline-block;
+}
+
+.legend-symbol {
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+}
+
+.residential {
+  background-color: #beaed4;
+}
+
+.commercial {
+  background-color: #7fc97f;
+}
+
+.industrial {
+  background-color: #949494;
+}
+
+.public {
+  background-color: #ffff99;
+}
+
+.medical {
+  background-color: #386cb0;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {   
+    flex-direction: column;
+  }
+}

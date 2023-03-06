@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Lab 3</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+  
+  <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+  <!-- Your styles from style.css -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>GIS Applications Lab 3</h1>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="sidebar">
+        <div id="layers">
+          <h2>Layers</h2>
+          <div class="layer-items">
+            <div class="layer-row">
+              <input type="checkbox" id="denver-buildings" checked>
+              <label for="denver-buildings">Buildings</label>
+            </div> 
+            <div class="layer-row">
+              <input type="checkbox" id="denver-food-stores" checked>
+              <label for="denver-food-stores">Food Stores</label>
+            </div> 
+          </div>
+        </div>
+        <div id="legend">
+          <h2>Legend</h2>
+          <div class="legend-items">
+            <div class="legend-row">
+              <div class="legend-symbol
+                  residential"></div>
+              <div class="legend-label">Residential</div>
+            </div>
+            <div class="legend-row">
+              <div class="legend-symbol
+                  commercial"></div>
+              <div class="legend-label">Commercial</div>
+            </div>
+            <div class="legend-row">
+              <div class="legend-symbol
+              industrial"></div>
+              <div class="legend-label">Industrial</div>
+            </div>
+            <div class="legend-row">
+              <div class="legend-symbol
+              public"></div>
+              <div class="legend-label">Public</div>
+            </div>
+            <div class="legend-row">
+              <div class="legend-symbol
+              medical"></div>
+              <div class="legend-label">Medical</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>FRCC: GIS 2005</p>
+    </div>
+  </div>
+
+  <!-- JavaScript imports come after this line -->
+
+  <!-- Mapbox GL JS script -->
+  <script>
+
+  </script>
+  <!-- Your JavaScript from script.js-->
+  <script src="script.js"></script>
+</body>
+  
+<style>
+  .mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
+</style>
+  
+</html>
