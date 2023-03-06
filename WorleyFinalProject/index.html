@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Snow-Board</title>
+  <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <!-- Load the `mapbox-gl-geocoder` plugin. -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+  
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img height="100%" width="100%" src="images/snowy_mountains_header.jpg"></img>
+      <div class="header-text" <h1>The Snow-Board</h1><img 
+ height="50" width="50" src="images/snowflake.png">
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="sidebar">
+        <div id="clock"> <iframe
+            src="https://free.timeanddate.com/clock/i8mer9o9/n75/fs20/tcff9/pct/ftb/bacc4c4c4/pa8/tt0/tw1/tm1/th1/ta1/tb4"
+            frameborder="0" width="300" height="60" allowtransparency="true"></iframe>
+        </div>
+        <div class="section1">
+          <iframe width="300" height="250"
+            src="https://embed.windy.com/embed2.html?lat=38.730&lon=-105.745&detailLat=40.424&detailLon=-105.094&width=650&height=450&zoom=6&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+            frameborder="0"></iframe>
+        </div>
+        <div class="section2">
+          <div id="webcams_header">
+            <p>SnowCams</p>
+          </div>
+          <div id="webcams">
+            <img height="220px" width="300px" src="https://www.nps.gov/webcams-romo/glacier_basin.jpeg">
+            </img>
+          </div>
+        </div>
+        <div class="section3">
+          <div id="wpc_header">
+            <p>SnowCast</p>
+          </div>
+          <div id="wpc_graphic">
+            <a href="https://www.wpc.ncep.noaa.gov/#page=wwx"><img height="220px" width="300px"
+                src="https://www.wpc.ncep.noaa.gov/wwd/day1_psnow_gt_04_conus.gif"></a>
+          </div>
+        </div>
+        <div class="section4">
+          <div id="snow-links-header">
+            <p>SnowLinks</p>
+          </div>
+          <div id="snow-links">
+            <p><a href="https://www.weather.gov/bou">NWS Boulder, Colorado</a></p>
+            <p><a href="https://www.weather.gov/bou/winter">Winter Weather Decision Support</a></p>
+            <p><a href="https://www.wpc.ncep.noaa.gov/index.shtml#page=wwx/">WPC Winter Weather Forecast</a></p>
+            <p><a href="https://www.nps.gov/romo/learn/photosmultimedia/webcams.htm">Rocky Mountain NP Webcams</a></p>
+            <p><a href="https://www.onthesnow.com/colorado/webcams">Colorado Ski Resort Webcams</a></p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="main">
+       <div class="sub-header">
+        <div id="instructions">Click on the name of a city below to update the map and view snowfall reports in that city and find the closest coffee shops to that report.</div>
+        <div class="buttons">
+          <div id="Aspen">
+            <button type="button" onclick="GoToAspen();">Aspen</button>
+          </div>
+          <div id="Breckenridge">
+            <button type="button" onclick="GoToBreck();">Breckenridge</button>
+          </div>
+          <div id="Crested_Butte"> 
+            <button type="button" onclick="GoToCB();">Crested Butte</button>
+          </div>
+          <div id="Estes_Park">
+            <button type="button" onclick="GoToEstes();">Estes Park</button>
+          </div>
+          <div id="Nederland">
+            <button type="button" onclick="GoToNed();">Nederland</button>
+          </div>
+          <div id="default">
+            <button type="button" onclick="defaultMapview();"><b>Return to Default Map View</b></button>
+          </div>
+        </div>
+      </div>
+        <div id="map"></div>
+        <!-- Footer -->
+        <div class="footer">
+          <p>*Disclaimer: This webpage was created for a GIS Applications project. I am currently a GIS certificate
+            student at Front Range Community College. Some of the data was created in order to have data for this
+            project.
+            Shoot me an email at cworleycriado@gmail.com if you have any questions or want to help me improve it! May
+            all
+            your snow days be cozy!</p>
+          <p> ***RADAR DATA IS NOT CURRENT*** </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+
+</body>
+
+<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+
+</html>

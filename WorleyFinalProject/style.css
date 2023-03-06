@@ -1,0 +1,144 @@
+html, body, .container {
+  height: 100%;
+  padding: 0%;
+  margin: 0px;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+iframe {
+  flex: auto;
+}
+
+.header-text {
+  position: absolute;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  bottom: 30px;
+  left: 100px;
+}
+
+.sub-header {
+  flex: auto;
+  flex-direction: column;
+  display: flex;
+  background: #a8d2ff;
+  border: 1px solid #c4c4c4;
+}
+
+.buttons {
+  padding: 5px 0;
+}
+
+#instructions {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+#Aspen {
+  float: left;
+}
+
+#Breckenridge {
+  float: left;
+}
+
+#Crested_Butte {
+  float: left;
+}
+
+#Estes_Park {
+  float: left;
+}
+
+#Nederland {
+  float: left;
+}
+
+#default {
+  float: right;
+}
+
+.content {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  flex: none;
+  margin-left: 0px;
+  width: 300px;
+  height: 100%;
+}
+
+#webcams_header {
+  flex: auto;
+  text-align: center;
+  background: #a8d2ff;
+  border: 1px solid #c4c4c4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#wpc_header {
+  height: 50%;
+  text-align: center;
+  background: #a8d2ff;
+  border: 1px solid #c4c4c4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#snow-links-header {
+  text-align: center;
+  background: #a8d2ff;
+  border: 1px solid #c4c4c4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#snow-links {
+  text-align: center;
+  background: #a8d2ff;
+  border: 1px solid #c4c4c4;
+}
+
+.main {
+  flex: auto;
+  flex-direction: column;
+}
+
+#map {
+  height: 85%;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+}
+
+.footer {
+  border: 1px solid #c4c4c4;
+  background: #ccd1d7;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {   
+    flex-direction: column;
+  }
+}
