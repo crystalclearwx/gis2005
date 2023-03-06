@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Boulder, Colorado</title>
+
+</head>
+
+<body>
+
+  <!-- banner image -->
+  <img src="images/flatirons.jpg" alt="Boulder Colorado Flatirons" width="500" height="200">
+
+  <!-- header text -->
+  <b>
+    <p style="font-size:200%;"> Welcome to beautiful Boulder, Colorado! </p>
+  </b>
+
+  <!-- website description -->
+  Use the tools on this page to explore the many outdoor activities Boulder has to offer.
+
+  <p>Want to find a specific spot? Enter in an address using the map's 'search' option.
+
+  <p style="color:darkgrey;"><i><small>Ex: 123 Cotton Candy Lane, Forevertown, Wakanda 11111</small></i></p>
+
+  <!-- embed map into a webpage -->
+  <link
+    href='https://api.mapbox.com/styles/v1/cworleycriado/cl8l1r6yv000014ln696i87n3.html?title=copy&access_token=pk.eyJ1IjoiY3dvcmxleWNyaWFkbyIsImEiOiJjbDdvMTVrdmgwbXl2M25udjhxdmswNm45In0.9x-iDqKgeW5YiqUSNij1UA&zoomwheel=true&fresh=true#14.67/40.00078/-105.29295'
+    rel='stylesheet'>
+
+  <iframe width='40%' height='400px'
+    src="https://api.mapbox.com/styles/v1/cworleycriado/cl8l1r6yv000014ln696i87n3.html?title=false&access_token=pk.eyJ1IjoiY3dvcmxleWNyaWFkbyIsImEiOiJjbDdvMTVrdmgwbXl2M25udjhxdmswNm45In0.9x-iDqKgeW5YiqUSNij1UA&zoomwheel=false#14.67/40.00078/-105.29295"
+    title="Worley_Lab1" style="border:none;"></iframe>
+
+  <!-- text for map tips -->
+  <p style="color:RoyalBlue; font-family:verdana;"> Tips: You can click and drag across the map to view different areas
+    or you can Hold CTRL, 
+    <p style="color:RoyalBlue; font-family:verdana;"> then click and drag to view the map's three dimensions.</p></p>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY3dvcmxleWNyaWFkbyIsImEiOiJjbDdvMTVrdmgwbXl2M25udjhxdmswNm45In0.9x-iDqKgeW5YiqUSNij1UA'; // map access token
+    const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/cworleycriado/cl8l1r6yv000014ln696i87n3', // style URL
+      center: [-105.27, 40.02], // starting position [lng, lat]
+      zoom: 12, // starting zoom
+      projection: 'mercator' // project the map in mercator
+    });
+
+  </script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
